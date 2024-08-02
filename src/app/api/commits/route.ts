@@ -1,8 +1,9 @@
 import { NextResponse } from 'next/server';
+const githubToken = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
 const GITHUB_API_URL = 'https://api.github.com';
 const USERNAME = 'Ezequiel-Sale'; // Reemplaza con tu usuario
-const ACCESS_TOKEN = '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'; // Reemplaza con tu token de acceso personal
+const ACCESS_TOKEN = githubToken; // Reemplaza con tu token de acceso personal
 const YOUR_GITHUB_USERNAME = 'Ezequiel-Sale'; // Reemplaza con tu nombre de usuario
 
 interface Commit {
