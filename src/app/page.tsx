@@ -1,9 +1,23 @@
+"use client";
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 const Home = () => {
+  const handleDownload = () => {
+    // La ruta del archivo dentro de la carpeta public
+    const filePath = '/cv.docx';
+    // Crear un enlace temporal
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.download = 'cv.docx';
+    // Añadir el enlace al documento y hacer click en él
+    document.body.appendChild(link);
+    link.click();
+    // Eliminar el enlace del documento
+    document.body.removeChild(link);
+  };
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -24,6 +38,7 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={handleDownload}
               >
                 <span>Descargar CV</span>
                 <FiDownload className="text-xl" />
