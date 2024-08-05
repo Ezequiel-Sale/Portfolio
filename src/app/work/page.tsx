@@ -14,6 +14,7 @@ import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Video } from "lucide-react";
 
 const description =
   "La aplicación está destinada a la administración de gimnasios, la app tiene tres tipos de roles los cuales pueden realizar distintas acciones. Los roles son: Admin, Profesor y usuario.Como Admin se pueden crear profesores, crear planes de subscripción, obtener los usuarios registrados, los pagos que realizaron, activar o desactivar usuarios y profesores, registrar pagos en efectivo, también cuenta con una sección en donde el admin puede acceder a su cámara para leer el código QR que se le genera al usuario para poder ingresar al establecimiento.Como profesor puede iniciar sesión con el email y contraseña que le brinda el admin cuando se registra, al ingresar el profesor observa su dashboard con los días y horarios que él trabaja junto con los alumnos inscriptos en los diferentes horarios y puede subirles rutinas personalizadas a cada alumno.Como Usuario puede registrarse con un formulario o con Google, luego pasa a otro formulario en donde indica peso, altura, nivel de actividad para que el profesor tenga en cuenta al momento de crear su rutina, luego puede elegir el profesor, los días y el horario. Al momento de continuar se le indica el plan, el monto y la información que cargo anteriormente junto con la forma de pago que sería en efectivo o por Mercado Pago. Si selecciona efectivo, luego tiene que contactar al administrador para que informe el pago y habilitar el usuario para poder ingresar. Si selecciona Marcado Pago continua el flujo desde la página de MP y al finalizar el pago de manera exitosa regresa al login para iniciar sesión. Una vez dentro del dashboard de usuario podrá ver sus datos personales, profesor elegido y horarios, podrá ver un historial de pagos realizados, podrá ver la rutina que el profesor le subió y descargarla y por último esta la sección en donde si el usuario esta activo podrá visualizar el código QR para poder acceder al establecimiento, en el caso de que su mensualidad haya caducado dicho código no se mostrara y la app le sugerirá al usuario que realice un nuevo pago para poder ingresar, en este nuevo formulario el usuario puede decidir mantener el mismo profesor y horarios o cambiar dichos datos.";
@@ -44,7 +45,7 @@ const projects = [
         name: "TypeORM",
       },
     ],
-    image: "/assets/work/thumb1.png",
+    image: "/assets/work/thumb1.gif",
     live: "https://pf-henry-front-rouge.vercel.app/",
     github: "https://github.com/Ezequiel-Sale/PF-HENRY-FRONT",
   },
@@ -64,15 +65,15 @@ const projects = [
         name: "Typescript",
       },
     ],
-    image: "/assets/work/thumb2.png",
+    image: "/assets/work/thumb2.gif",
     live: "https://e-commerce-eight-omega.vercel.app/",
     github: "https://github.com/Ezequiel-Sale/E-commerce",
   },
   {
     num: "03",
-    category: "frontend",
-    title: "proyecto 3",
-    description: "description 3",
+    category: "Fullstack",
+    title: "Movies App",
+    description: "Aplicación desarrollada en el modulo 2 del bootcamp de Henry. Esta app en su inicio trae las peliculas que estan en la base de datos de MongoDB, tiene tres secciones más en donde la sección de Historia del cine muestra unos articulos con información sobre la historia del cine, luego en la sección de webs recomendadas se pueden visualizar algunas webs que han sido recomendadas por los usuarios, luego en la sección de Formulario se pueden crear peliculas que se guardaran en la base de datos y se visualizaran en el incio con su respectiva card",
     stack: [
       {
         name: "Html 5",
@@ -83,10 +84,36 @@ const projects = [
       {
         name: "Javascript",
       },
+      {
+        name: "Express.js",
+      },
+      {
+        name: "MongoDB",
+      },
+      {
+        name: "Moogose",
+      },
     ],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+    image: "/assets/work/thumb3.gif",
+    live: "https://main--sage-parfait-bb3b90.netlify.app/",
+    github: "https://github.com/Ezequiel-Sale/moviesApp-Front",
+  },
+  {
+    num: "04",
+    category: "Frontend",
+    title: "Police vs Taxi",
+    description: "Aplicación creada con HTML 5 y CSS puro",
+    stack: [
+      {
+        name: "Html 5",
+      },
+      {
+        name: "Css 3",
+      },
+    ],
+    image: "/assets/work/thumb4.gif",
+    live: "https://main--tiny-florentine-66d1a5.netlify.app/",
+    github: "https://github.com/Ezequiel-Sale/police-vs-taxi",
   },
 ];
 
@@ -168,14 +195,15 @@ const Work = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[400px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[400px] relative group flex justify-center items-center bg-transparent">
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       <div className="relative w-full h-full">
                         <Image
                           src={project.image}
                           alt={project.title}
-                          className="object-cover"
+                          className="object-contain w-full h-full"
                           fill
+                          unoptimized={true}
                         />
                       </div>
                     </div>

@@ -1,6 +1,6 @@
 "use client";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiTypescript, SiExpress } from "react-icons/si";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -17,19 +17,19 @@ const about = {
     "¡Hola! soy Ezequiel Alejandro Sale, un desarrollador full stack con una fuerte inclinación hacia el desarrollo front-end. Me apasionan los desafíos constantes del mundo IT debido a su constante evolución y las oportunidades de aprendizaje continuo que ofrece.",
   info: [
     {
-      fieldName: "Name",
+      fieldName: "Nombre",
       fieldValue: "Ezequiel Sale",
     },
     {
-      fieldName: "Phone",
+      fieldName: "Telefono",
       fieldValue: "(+54) 381 539 3711",
     },
     {
-      fieldName: "Experience",
+      fieldName: "Experiencia",
       fieldValue: "1 year coding experience",
     },
     {
-      fieldName: "Nationality",
+      fieldName: "Nacionalidad",
       fieldValue: "Argentina",
     },
     {
@@ -38,7 +38,7 @@ const about = {
     },
     {
       fieldName: "Freelance",
-      fieldValue: "Available",
+      fieldValue: "Disponible",
     },
     {
       fieldName: "Languages",
@@ -102,6 +102,10 @@ const skills = {
     {
       name: "TypeScript",
       icon: <SiTypescript />,
+    },
+    {
+      name: "Express.js",
+      icon: <SiExpress />,
     },
   ],
 };
@@ -203,7 +207,7 @@ const Resume = () => {
                         className="flex items-center justify-center xl:justify-start gap-4"
                       >
                         <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-xl">{item.fieldValue}</span>
+                        <span className="text-lg">{item.fieldValue}</span>
                       </li>
                     );
                   })}
