@@ -29,7 +29,7 @@ const Stats = () => {
       try {
         const response = await fetch('/api/commits');
         if (!response.ok) {
-          throw new Error('Error fetching commits');
+          throw new Error('Error fetching commits stats page');
         }
         const data = await response.json();
         setStats((prevStats) =>
