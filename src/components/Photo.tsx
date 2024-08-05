@@ -25,7 +25,7 @@ const Photo = () => {
             priority
             quality={100}
             fill
-            className="object-contain"
+            className="object-contain w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] rounded-full"
           />
         </motion.div>
         <motion.svg

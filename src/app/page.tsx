@@ -7,11 +7,11 @@ import { FiDownload } from "react-icons/fi";
 const Home = () => {
   const handleDownload = () => {
     // La ruta del archivo dentro de la carpeta public
-    const filePath = '/cv.docx';
+    const filePath = '/cv.pdf';
     // Crear un enlace temporal
     const link = document.createElement('a');
     link.href = filePath;
-    link.download = 'cv.docx';
+    link.download = 'cv.pdf';
     // Añadir el enlace al documento y hacer click en él
     document.body.appendChild(link);
     link.click();
@@ -29,9 +29,7 @@ const Home = () => {
               <span className="text-accent">Ezequiel Sale</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Mini Bio Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Praesentium ut veniam numquam! Quos voluptatibus laudantium
-              aliquid commodi veniam suscipit deleniti.
+            ¡Hola! Soy Ezequiel Alejandro Sale, un desarrollador full stack con una fuerte inclinación hacia el desarrollo front-end. Me apasionan los desafíos constantes del mundo IT debido a su constante evolución y las oportunidades de aprendizaje continuo que ofrece.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button

@@ -12,7 +12,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 
 const about = {
-  title: "About me",
+  title: "Acerca de mi",
   description:
     "¡Hola! soy Ezequiel Alejandro Sale, un desarrollador full stack con una fuerte inclinación hacia el desarrollo front-end. Me apasionan los desafíos constantes del mundo IT debido a su constante evolución y las oportunidades de aprendizaje continuo que ofrece.",
   info: [
@@ -49,9 +49,9 @@ const about = {
 
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My education",
+  title: "Mi educación",
   description:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, culpa.",
+    "Estos son algunos de los estudios que he realizado:",
   items: [
     {
       intitution: "Henry",
@@ -67,9 +67,9 @@ const education = {
 };
 
 const skills = {
-  title: "My skills",
+  title: "Mis skills",
   description:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, culpa.",
+    "Estos son algunos de los lenguajes y tecnologías que manejo actualmente:",
   items: [
     {
       name: "HTML 5",
@@ -122,9 +122,9 @@ const Resume = () => {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="education">Education</TabsTrigger>
+            <TabsTrigger value="education">Educación</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
+            <TabsTrigger value="about">Acerca de mi</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
             <TabsContent value="education" className="w-full">
