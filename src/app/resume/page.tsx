@@ -1,6 +1,6 @@
 "use client";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiTypescript, SiExpress } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiTypescript, SiExpress, SiPostgresql, SiMicrosoftsqlserver } from "react-icons/si";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -106,6 +106,14 @@ const skills = {
     {
       name: "Express.js",
       icon: <SiExpress />,
+    },
+    {
+      name: "PostgreSQL",
+      icon: <SiPostgresql />,
+    },
+    {
+      name: "SQL Server",
+      icon: <SiMicrosoftsqlserver />,
     },
   ],
 };
