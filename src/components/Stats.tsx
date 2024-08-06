@@ -1,6 +1,6 @@
 "use client";
-import { skills } from "@/app/resume/page";
-import { projects } from "@/app/work/page";
+import { skills } from "@/data/dataSkills";
+import { projects } from "@/data/dataProjects";
 import React, { useEffect, useState } from "react";
 import CountUp from "react-countup";
 

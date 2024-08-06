@@ -1,6 +1,5 @@
 "use client";
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiTypescript, SiExpress, SiPostgresql, SiMicrosoftsqlserver } from "react-icons/si";
+
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -10,6 +9,7 @@ import {
 } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
+import { skills } from "@/data/dataSkills";
 
 const about = {
   title: "Acerca de mi",
@@ -66,57 +66,7 @@ const education = {
   ],
 };
 
-export const skills = {
-  title: "Mis skills",
-  description:
-    "Estos son algunos de los lenguajes y tecnologías que manejo actualmente:",
-  items: [
-    {
-      name: "HTML 5",
-      icon: <FaHtml5 />,
-    },
-    {
-      name: "CSS 3",
-      icon: <FaCss3 />,
-    },
-    {
-      name: "JavaScript",
-      icon: <FaJs />,
-    },
-    {
-      name: "React",
-      icon: <FaReact />,
-    },
-    {
-      name: "Next.js",
-      icon: <SiNextdotjs />,
-    },
-    {
-      name: "Tailwind.css",
-      icon: <SiTailwindcss />,
-    },
-    {
-      name: "Node.js",
-      icon: <FaNodeJs />,
-    },
-    {
-      name: "TypeScript",
-      icon: <SiTypescript />,
-    },
-    {
-      name: "Express.js",
-      icon: <SiExpress />,
-    },
-    {
-      name: "PostgreSQL",
-      icon: <SiPostgresql />,
-    },
-    {
-      name: "SQL Server",
-      icon: <SiMicrosoftsqlserver />,
-    },
-  ],
-};
+
 
 const Resume = () => {
   return (
@@ -178,13 +128,14 @@ const Resume = () => {
                 </div>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4 xl:mb-8">
                   {skills.items.map((item, index) => {
+                    const Icon = item.icon
                     return (
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
                             <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
                               <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {item.icon}
+                                <Icon />
                               </div>
                             </TooltipTrigger>
                             <TooltipContent>
