@@ -66,7 +66,7 @@ const education = {
   ],
 };
 
-const skills = {
+export const skills = {
   title: "Mis skills",
   description:
     "Estos son algunos de los lenguajes y tecnologías que manejo actualmente:",

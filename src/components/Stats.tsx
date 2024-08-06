@@ -1,18 +1,20 @@
 "use client";
+import { skills } from "@/app/resume/page";
+import { projects } from "@/app/work/page";
 import React, { useEffect, useState } from "react";
 import CountUp from "react-countup";
 
 const initialStats = [
   {
     num: 1,
-    text: "Años de experiencia",
+    text: "Año de experiencia",
   },
   {
-    num: 4,
+    num: projects.length,
     text: "Proyectos completos",
   },
   {
-    num: 8,
+    num: skills.items.length,
     text: "Tecnologías",
   },
   {
