@@ -145,11 +145,6 @@ const Contact = () => {
               ref={form}
             >
               <h3 className="text-4xl text-accent">¡Trabajemos juntos!</h3>
-              <p className="text-white/60">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                quas quia quae provident voluptatem voluptatum consequatur in,
-                eveniet sit itaque.
-              </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="relative">
                   <Input
