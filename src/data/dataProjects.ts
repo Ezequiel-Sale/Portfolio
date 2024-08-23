@@ -80,6 +80,23 @@ export const projects = [
     {
       num: "04",
       category: "Frontend",
+      title: "Tetris",
+      description: "Aplicación creada con Javascript y CSS3 recreando el famoso juego Tetris",
+      stack: [
+        {
+          name: "Javascript",
+        },
+        {
+          name: "Css 3",
+        },
+      ],
+      image: "/assets/work/thumb5.gif",
+      live: "https://tetris-ezequielsale.netlify.app/",
+      github: "https://github.com/Ezequiel-Sale/Tetris",
+    },
+    {
+      num: "05",
+      category: "Frontend",
       title: "Police vs Taxi",
       description: "Aplicación creada con HTML 5 y CSS puro",
       stack: [
