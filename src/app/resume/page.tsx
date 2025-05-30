@@ -33,7 +33,7 @@ const about = {
     },
     {
       fieldName: "Experiencia programando",
-      fieldValue: yearsOfExperience + " años",
+      fieldValue: Number(yearsOfExperience) + " años",
     },
     {
       fieldName: "Nacionalidad",

@@ -11,11 +11,10 @@ if (currentDate.getMonth() < date.getMonth() || (currentDate.getMonth() === date
   yearsOfExperience--;
 }
 
-console.log(yearsOfExperience)
 
 const initialStats = [
   {
-    num: yearsOfExperience,
+    num: Number(yearsOfExperience),
     text: "Año de experiencia programando",
   },
   {
