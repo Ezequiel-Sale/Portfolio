@@ -4,10 +4,19 @@ import { projects } from "@/data/dataProjects";
 import React, { useEffect, useState } from "react";
 import CountUp from "react-countup";
 
+const date = new Date("2021-01-01T00:00:00Z"); // Fecha de inicio de la experiencia
+const currentDate = new Date();
+let yearsOfExperience = currentDate.getFullYear() - date.getFullYear();
+if (currentDate.getMonth() < date.getMonth() || (currentDate.getMonth() === date.getMonth() && currentDate.getDate() < date.getDate())) {
+  yearsOfExperience--;
+}
+
+console.log(yearsOfExperience)
+
 const initialStats = [
   {
-    num: 1,
-    text: "Año de experiencia",
+    num: yearsOfExperience,
+    text: "Año de experiencia programando",
   },
   {
     num: projects.length,

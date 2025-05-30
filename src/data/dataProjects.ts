@@ -111,4 +111,25 @@ export const projects = [
       live: "https://main--tiny-florentine-66d1a5.netlify.app/",
       github: "https://github.com/Ezequiel-Sale/police-vs-taxi",
     },
+    {
+      num: "06",
+      category: "Frontend",
+      title: "Switch",
+      description: "Aplicación creada con React three fiber y Tailwind CSS, utilizando modelos 3D de la consola Nintendo Switch para mostrar la pokedex de Pokémon de forma interactiva.",
+      stack: [
+        {
+          name: "Javascript",
+        },
+        {
+          name: "Tailwind CSS",
+        },
+        {
+          name: "React Three Fiber",
+        },
+      ],
+      image: "/assets/work/thumb6.png",
+      live: "https://whimsical-cajeta-6750b9.netlify.app/",
+      github: "https://github.com/Ezequiel-Sale/Switch-PokeAPI",
+    },
+
   ];

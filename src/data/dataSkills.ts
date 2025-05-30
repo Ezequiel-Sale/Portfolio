@@ -1,6 +1,6 @@
 import { IconType } from 'react-icons';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
-import { SiNextdotjs, SiTailwindcss, SiTypescript, SiExpress, SiPostgresql, SiMicrosoftsqlserver } from 'react-icons/si';
+import { SiNextdotjs, SiTailwindcss, SiTypescript, SiExpress, SiPostgresql, SiMicrosoftsqlserver, SiNestjs } from 'react-icons/si';
 
 interface Skill {
   name: string;
@@ -28,5 +28,6 @@ export const skills: SkillsData = {
     { name: "Express.js", icon: SiExpress },
     { name: "PostgreSQL", icon: SiPostgresql },
     { name: "SQL Server", icon: SiMicrosoftsqlserver },
+    { name: "Nest.js", icon: SiNestjs },
   ],
 };
