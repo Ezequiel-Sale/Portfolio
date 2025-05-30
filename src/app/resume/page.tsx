@@ -11,13 +11,6 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 import { skills } from "@/data/dataSkills";
 
-const date = new Date("2021-01-01T00:00:00Z"); // Fecha de inicio de la experiencia
-const currentDate = new Date();
-let yearsOfExperience = currentDate.getFullYear() - date.getFullYear();
-if (currentDate.getMonth() < date.getMonth() || (currentDate.getMonth() === date.getMonth() && currentDate.getDate() < date.getDate())) {
-  yearsOfExperience--;
-}
-
 const about = {
   title: "Acerca de mi",
   description:
@@ -33,7 +26,7 @@ const about = {
     },
     {
       fieldName: "Experiencia programando",
-      fieldValue: Number(yearsOfExperience) + " años",
+      fieldValue: "4 años",
     },
     {
       fieldName: "Nacionalidad",
